@@ -72,8 +72,7 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact Us</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2F1v-U_LlBqVUlCEw9hTAYjkm1dr64iOf1sQr8LRAsCH7U%2Fviewform%3Fembedded%3Dtrue&followup=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2F1v-U_LlBqVUlCEw9hTAYjkm1dr64iOf1sQr8LRAsCH7U%2Fviewform%3Fembedded%3Dtrue&ltmpl=forms#identifier" target="_blank">Join Us</a>
+                    <li><a style="cursor:pointer" data-toggle="modal" data-target="#joinusModal">Join us</a>
                     </li>
                </ul>
             </div>
@@ -557,6 +556,7 @@
     <!-- Modal -->
     <div id="myModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-sm">
+
 
         <!-- Modal content-->
         <div class="modal-content">
@@ -1212,6 +1212,63 @@ Last Edited on 2016-03-15</p>
         </div>
     </div>
 
+    <!-- join us form modal-->
+    
+    <div class="portfolio-modal modal fade" id="joinusModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+
+
+                            <!---form Details Go Here -->
+                            <h2>Join us now!</h2>
+                            <p class="item-intro text-muted">Fill out the form below...</p>
+                                <form role="form">
+                                  <div class="form-group">
+                                    <label for="first_name">First Name:</label>
+                                    <input type="text" class="form-control" id="first_name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="last_name">Last Name:</label>
+                                    <input type="text" class="form-control" id="last_name">
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="contact_no">Contact No:</label>
+                                    <input type="text" class="form-control" id="contact_no">
+                                  </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email address:</label>
+                                    <input type="email" class="form-control" id="email">
+                                  </div>
+
+                                  <div class="form-group">
+                                    <label for="project_name">Interested Project Name:</label>
+                                    <input type="text" class="form-control" id="project_name">
+                                  </div>
+                                  
+                                  
+                                  <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+                        <br><br><br>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close this form</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
