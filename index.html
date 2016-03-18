@@ -491,7 +491,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" method="post" action="contact.php" novalidate>
+                    <form name="sentMessage" id="contactForm" method="post" action="contact_me.php" novalidate>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -1231,33 +1231,126 @@ Last Edited on 2016-03-15</p>
                             <!---form Details Go Here -->
                             <h2>Join us now!</h2>
                             <p class="item-intro text-muted">Fill out the form below...</p>
-                                <form role="form">
-                                  <div class="form-group">
-                                    <label for="first_name">First Name:</label>
-                                    <input type="text" class="form-control" id="first_name">
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="last_name">Last Name:</label>
-                                    <input type="text" class="form-control" id="last_name">
+                                <form name="sentMessage" id="contactForm" role="form" action="contact_me1.php" method="post" novalidate>
+                                  <div class="form-group" >
+                                    <label for="name">Name:</label>
+                                    <input type="text" class="form-control" id="name">
                                   </div>
 
-                                  <div class="form-group">
+                                  <div class="form-group" >
+                                    <label for="date_of_birth">Date Of Birth:</label>
+                                    <input type="date" class="form-control" id="date_of_birth">
+                                  </div>
+									
+								<div class="radio" >
+								<label for="gender"><b>Gender:&nbsp;&nbsp;&nbsp;</b></label>
+     								 <label><input type="radio" value="male" id="gender">Male</label>&nbsp;&nbsp;&nbsp;
+     								 <label><input type="radio" value="female" id="gender">Female</label>
+    							</div>
+    				
+    							                       
+								
+
+    							<div class="form-group">
+                                    <label for="email">Email ID:</label>
+                                    <input type="email" class="form-control" id="email_id">
+                                </div>
+
+                                 <div class="form-group">
                                     <label for="contact_no">Contact No:</label>
-                                    <input type="text" class="form-control" id="contact_no">
-                                  </div>
-                                
-                                <div class="form-group">
-                                    <label for="email">Email address:</label>
-                                    <input type="email" class="form-control" id="email">
-                                  </div>
+                                    <input type="number" name="contact_no" class="form-control" id="contact_no">
+                                 </div>
+                           
+                          		 <div class="form-group">
+								  <label for="address">Current Address:</label>
+								  <textarea class="form-control" rows="5" id="address"></textarea>
+								</div>
 
-                                  <div class="form-group">
-                                    <label for="project_name">Interested Project Name:</label>
-                                    <input type="text" class="form-control" id="project_name">
-                                  </div>
+
+
+								<br><br> 
+    							<div class="radio" >
+								<label for="education"><b>Education:&nbsp;&nbsp;&nbsp;</b></label>
+     								 <br><label>
+     								 	<input type="radio" name="education" id="Secondary school student (7th-10th standard)">A. Secondary school student (7th-10th standard)
+     								 </label><br>
+     							<label>
+     								<input type="radio" name="education" id="Higher secondary student (11th-12th standard)">B.Higher secondary student (11th-12th standard)
+     							</label><br>
+
+     							<label>
+     								<input type="radio" name="education" id="Graduate student">C.Graduate student
+     							</label><br>
+
+     							<label>
+     								<input type="radio" name="education" id="Post Graduate student">D.Post Graduate student
+     							</label><br>
+
+     							<label>
+     								<input type="radio" name="education" id="Post Graduate student">D.Post Graduate student
+     							</label><br>
+     							<label>
+     								<input type="radio" name="education" id="Other">E. Other
+     							</label><br>
+     							</div>        
                                   
-                                  
-                                  <button type="submit" class="btn btn-default">Submit</button>
+                                 
+                                <div class="form-group" >
+                                    <label for="Organization">Organization/College:</label>
+                                    <input type="text" class="form-control" id="Organization_College">
+                                </div>
+                                
+
+                                <div class="form-group">
+                                <label for="laguage"><b>Language Fluency:</b></label>
+                                <br>
+  									<label for="language">English:</label>
+										  <select class="form-control" id="English">
+										    <option></option>
+										    <option>Cannot understand</option>
+										    <option>Can understand</option>
+										    <option>Fluent in reading,writing,verbal communication</option>
+										</select>
+
+									<label for="language">Marathi:</label>
+										  <select class="form-control" id="Marathi">
+										  	<option></option>
+										    <option>Cannot understand</option>
+										    <option>Can understand</option>
+										    <option>Fluent in reading,writing,verbal communication</option>
+										  </select>
+									<label for="language">Hindi:</label>
+										  <select class="form-control" id="Hindi">
+										  	<option></option>
+										    <option>Cannot understand</option>
+										    <option>Can understand</option>
+										    <option>Fluent in reading,writing,verbal communication</option>
+										  </select>
+								</div>
+								<br>
+								<div class="radio" >
+								<label for="association"><b>How do you want to be associated with The Bodhi Project?:&nbsp;&nbsp;&nbsp;</b></label><br>
+     								 <label><input type="radio" name="association" id="Volunteer">A. Volunteer</label>&nbsp;&nbsp;&nbsp;
+     								 <label><input type="radio" name="association" id="Team Member">B. Team Member</label>&nbsp;&nbsp;&nbsp;
+     								 <label><input type="radio" name="association" id="Beneficiary">C. Beneficiary</label>&nbsp;&nbsp;&nbsp;
+     								
+    							</div>
+    							<br>
+    							<div class="form-group">
+								  <label for="reason_to_join">Why do you want to be a part of The Bodhi Project?</label>
+								  <textarea class="form-control" rows="10" id="reason_to_join"></textarea>
+								</div>
+
+
+								<div class="radio" >
+								<label for="info"><b>How did you come to know about The Bodhi Project?&nbsp;&nbsp;&nbsp;</b></label><br>
+     								 <label><input type="radio" name="info" id="A.Friends">A. Friends</label>&nbsp;&nbsp;&nbsp;
+     								 <label><input type="radio" name="info" id="B.College associates">B.College associates</label>&nbsp;&nbsp;&nbsp;
+     								 <label><input type="radio" name="info" id="C.Facebook">C. Facebook</label>&nbsp;&nbsp;&nbsp;
+     								 <label><input type="radio" name="info" id="D. Other">D. Other</label>&nbsp;&nbsp;&nbsp;
+     								<br>
+    							</div id="success">
+    								<button type="submit" class="btn btn-default">Submit</button>
                                 </form>
                         <br><br><br>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close this form</button>
@@ -1268,7 +1361,7 @@ Last Edited on 2016-03-15</p>
         </div>
     </div>
     
-   
+ 
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -1283,8 +1376,8 @@ Last Edited on 2016-03-15</p>
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
+	<script src="js/contact_me.js"></script>
+	
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
 

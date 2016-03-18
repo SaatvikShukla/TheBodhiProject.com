@@ -67,3 +67,6 @@ ul.social-buttons li:hover {
     transform: rotate(360deg);
     transition: transform 300ms linear;
 }
+.portfolio-modal .modal-content {
+  text-align: left;
+}
